@@ -1,0 +1,1215 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@import "icons/*.png";
+@include all-icons-sprites; 
+
+$yellow: #fad000;
+$brown: #5a4a42;
+$text-color:  #414042;
+$grey: #939598;
+$off-white: #f4f5f5; 
+.post-edit-link{
+	display: none; 
+}
+h1{
+	font-size: 35px; 
+}
+
+h2{
+	font-size: 30px; 
+}
+h3{
+	font-size: 25px; 
+}
+h4{
+	font-size: 20px; 
+}
+h5{
+	font-size: 15px;
+}
+h6{
+	font-size: 10px; 
+}
+a{
+	color: $text-color;
+	&:hover{
+		color: $brown;
+	}
+}
+
+
+body{
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+	color: $text-color; 
+	font-size: 16px; 
+
+	background-image: url('http://generatedesignstaging.com/mcsa/wp-content/uploads/2015/04/mcsa-background-image.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+}
+
+.title-area{
+	padding: 0; 
+	padding-left: 5%; 
+	box-sizing: content-box; 
+}
+
+
+a.read-more{
+	color: $yellow; 
+	text-transform: uppercase; 
+	float: right; 
+	font-size: 14px; 
+	font-weight: bold; 
+	&:hover{
+		color: $brown;
+	}
+}
+p.justify{
+	text-align: justify; 
+}
+h1,h2,h3,h4,h5, h6{
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+	color: $brown; 
+	font-weight: 500; 
+}
+
+
+
+.site-inner, .wrap{
+	max-width: 1280px; 
+}
+.site-inner{
+	padding-top: 0px;
+	overflow: hidden; 
+}
+
+.entry{
+	margin-bottom: 0px; 
+	position: relative; 
+	padding: 0px;
+	width: 100%; 
+}
+
+
+.banner-content{
+	color: $grey; 
+	background-color: $off-white;
+	width: 100%; 
+	text-align: center; 
+	font-size: 35px;
+	padding: 20px 0; 
+	.inhouse-banner &{
+		font-size: 22px; 
+		line-height: 1.5em !Important; 
+		color: #636466; 
+		text-transform: uppercase;
+	}
+	.small &{
+			font-size: 16px; 
+			font-weight: bold; 
+		}
+}
+
+.home-side{
+	.items{
+		display: block; 
+		clear: both; 
+		overflow: hidden; 
+		font-size: 14px;
+		
+	}
+}
+img.banner-image{
+	margin-bottom: 0px; 
+	display: block; 
+	width: 100%; 
+	margin-top: -40px; 
+}
+button, input[type="button"], input[type="reset"], input[type="submit"], .button{
+	background-color: $yellow; 
+	padding: 10px 20px;
+	color: $brown; 
+	font-size: 14px;
+	font-weight: 500; 
+	letter-spacing: 0.5;
+	vertical-align: middle;
+	&:hover{
+		background-color: $brown; 
+	}
+}
+
+.main-content{
+	padding: 80px;
+	clear: both; 
+	overflow: hidden;
+}
+
+.home-page.bottom-content{
+background-image: url('http://generatedesignstaging.com/mcsa/wp-content/uploads/2015/04/bottom-content-home-background.jpg');
+p{
+	font-weight: 100; 
+}
+strong{
+	font-weight: 400; 
+}
+
+}
+.bottom-content{
+	clear: both; 
+	font-size: 25px; 
+	color: white; 
+	padding: 8.5% 6.2%;
+	/**
+	padding: 109px 80px; 
+	**/
+	overflow: hidden; 
+}
+
+.top-bar{
+	background-color:$brown; 
+	width: 100%; 
+	display: block; 
+	height: 30px; 
+	  max-width: 1280px;
+  margin: 0 auto;
+	text-align: right; 
+	a{
+		color: $yellow;
+		padding-right: 30px; 
+		letter-spacing: 1px; 
+		text-decoration: underline; 
+		&:hover{
+			color: white; 
+		}
+	}
+}
+.left{
+	float: left; 
+}
+
+.header-image .site-title > a{
+	min-height: 125px; 
+	background-size: contain; 
+}
+.site-header {
+	background-color: transparent; 
+	.wrap{
+		background-color: white; 
+		padding: 20px 0;
+	}
+.widget-area{
+	width: 431px; 
+	margin-top: 65px;
+	margin-right: 5%; 
+}
+}
+.widgettitle{
+	display: none;
+}
+
+.nav-primary{
+	background-color: transparent; 
+	.wrap{
+		background-color: $brown; 
+	}	
+}
+
+
+
+
+.bi-container{
+	position: relative; 
+}
+.bm-text{
+	  position: absolute;
+  top: 30%; 
+  left: 7.5%; 
+  max-width: 470px;
+  text-align: justify;
+  p{
+  	  font-size: 18px;
+  color: #58595b;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-info{
+	padding: 10px 30px; 
+	&:first-child{
+		border-right: 1px solid;
+		padding-left: 0px; 
+	}
+	&:last-child{
+		padding-right: 0px;
+	}
+	color: $brown; 
+	a{
+		color: $brown; 
+	}
+	width: 42%; 
+	img{
+		float: left; 
+		margin-right: 10px;
+	}
+	ul li{
+	text-align: left; 
+		  font-size: 14px;
+  font-style: italic;
+  line-height: 1.4;
+	}
+}
+.contact-info.address{
+	width: 55%; 
+}
+
+.internal-banner{
+	background-color: $brown; 
+	  padding: 20px 6.25%;
+	  color: white; 
+	h3{
+		color: $yellow; 
+	  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: "raleway",sans-serif;
+  
+	}
+}
+.brd{
+	border-bottom: 1px solid #ada5a1; 
+	padding-bottom: 10px;
+}
+.about-us .table{
+	width: 90%; 
+	margin-left: 10%; 
+	.table-cell:first-child{
+		width: 45%; 
+		padding-right: 60px; 
+	}
+	
+}
+.table{
+	display: table; 
+}
+.table-cell{
+	display: table-cell; 
+	vertical-align: top; 
+	text-align: justify; 
+	width: 50%; 
+	&:first-child{
+		width: 45%; 
+		padding-right: 5%; 
+	}
+	
+}
+
+.internal.bottom-content {
+	background-color: #404041; 
+	  padding: 7.82% 6.25%;
+	  /**
+	padding: 100px 80px; 
+	**/
+	h2{
+		text-align: center; 
+		color: $yellow; 
+		/**
+		padding-bottom: 70px; **/ 
+		padding-bottom: 6.2%; 
+		 
+	}
+	h1{
+		@extend h2;
+		font-size: 35px;
+	}
+	a{
+		color: white; 
+		font-style: normal; 
+		 word-wrap: break-word;
+	}
+	h3{
+		@extend h2; 
+		padding-bottom: 20px; 
+		font-size: 25px;
+	}
+	.one-third h2{
+		padding-bottom: 30px; 
+	}
+}
+
+#services{
+	background-color: $off-white; 
+	/** padding: 40px 100px; **/
+	padding: 3% 7.84%;
+	overflow: hidden; 
+	p{
+		margin-bottom: 0px; 
+		font-size: 20px; 
+		color: #636466; 
+		width: 80%;
+		margin-right: 2%; 
+		float: left;  
+ 
+	}
+	a.button{
+		margin-top: 15px; 
+
+	}
+}
+
+.page-title{
+	text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+ font-family: "raleway",sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px; 
+  /**
+  margin-bottom: 80px; **/
+  margin-bottom: 7.5%; 
+}
+
+
+.parent{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex; 
+	-webkit-flex-wrap: wrap; 
+	    -ms-flex-wrap: wrap; 
+	        flex-wrap: wrap; 
+	
+	
+}
+
+.item{
+	min-width: 200px; 
+	margin: 2%;
+	width: 29%;
+	color: white; 
+	background-color: #7b6e68; 
+	padding: 30px 20px;
+		h3{
+			font-size: 22px; 
+			color: white; 
+			padding-bottom: 10px;
+		}
+		a.read-more{
+			display: block; 
+			float: none; 
+			text-align: right; 
+			&:hover{
+				color: white; 
+			}
+		}
+		p{
+			margin: 0;
+			padding: 0;
+		}
+}
+
+.capital{
+	text-transform: uppercase; 
+}
+.center{
+	text-align: center;
+}
+.vigilio{
+	overflow:hidden;
+	img{
+		max-width: 300px;
+	}
+}
+.eye-cue{
+	clear:both; 
+	margin-top: 100px; 
+	img{
+		max-width: 300px; 
+	}
+}
+#resources{
+	padding-bottom: 0px;
+	p{
+		font-size: 20px;
+		margin-bottom: 60px;
+		.large-text{
+			font-size: 25px; 
+			display: block;
+			line-height: 1;
+ 			padding-bottom: 30px;
+		}
+	}
+	.one-half.first{
+		border-right: 4px solid $yellow;
+		padding-right: 50px;
+		padding-left: 0px; 
+	}
+	.one-half{
+		padding-left: 50px; 
+	}
+}
+.hide-label label{
+	display: none !Important; 
+}
+/****************************************** Contact Form CSS *************************************************************************/
+#gform_wrapper_1{
+		margin: 10px auto; 
+	li{
+		margin-bottom: 30px; 
+	}
+	input, textarea{
+		font-size: 16px; 
+		width: 100%;
+		padding: 10px;
+	}
+	input[type="submit"]{
+		 max-width: 400px;
+ 		 padding: 20px;
+ 		 margin: 0 auto;
+  		 display: block;
+	}
+}
+
+
+@media only screen and (min-width: 480px){
+	
+	#field_1_1{
+		padding-right: 30px; 
+	}
+#field_1_1, #field_1_2{
+		width: 50%; 
+		float: left; 
+		clear: none; 
+		.ginput_container{
+			width: 100%; 
+		}
+		input{
+			width: 100%; 
+		}
+	}
+}
+
+/********************************************* END OF CONATCT STYLES *******************************************************/
+
+.half-size{
+	/**
+	max-width: 1000px; 
+	**/
+	margin: 0 auto; 
+}
+.one-half.center{
+	  float: none;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 15px;
+  	.normal{
+  		font-weight: normal; 
+  	}
+}
+
+.bottom-content {
+	.item{
+	width: 22%; 
+	min-width: 154px;
+  	margin: 1%;
+	background-color: $yellow; 
+	color: $text-color; 
+	padding: 10px 20px; 
+	h2{
+		color: $text-color; 
+		padding-bottom: 0; 
+	}
+	p{
+		font-size: 15px; 
+		font-weight: bold; 
+		text-align: center; 
+	}
+}
+	.parent{
+	max-width: 700px;
+  	margin: 0 auto;
+	}
+}
+.below-content{
+	padding: 80px;
+}
+.breaks{
+	margin-top: -30px; 
+}
+.a-third{
+	display: table; 
+	padding-top: 80px; 
+	margin: 0 auto; 
+	div{
+		display: table-cell; 
+		width: 31.6%; 
+	}
+}
+.small-text{
+	font-size: 15px; 
+}
+.brown{
+	color: $brown; 
+}
+
+#full-width{
+	max-width: 100%; 
+}
+/******************************************* Footer Styles *********************************************************************/
+
+.footer-widgets-1{
+	margin-right: 0px; 
+}
+.footer-widgets .widget-area {
+  width: 16.5%;
+  padding-right: 10px; 
+  min-width: 122px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 auto;
+  float: none;
+  vertical-align: top;
+  text-align: left;
+  margin-bottom: 30px;
+  ul{
+  	display: table; 
+  	width: auto; 
+  	margin: 0 auto; 
+  	float: none; 
+  	li{
+  		display: inline-block; 
+  		width: 100%; 
+  	}
+  }
+}
+
+.icons-phone, .icons-email, .icons-lock{
+	height: 14px;
+  width: 20px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.icons-lock{
+	height: 20px; 
+	margin-top: 0px; 
+}
+.footer-widgets {
+	background-color: $brown;
+		.wrap{
+			max-width: 1200px; 
+		}
+	ul {
+		padding-left: 15px;
+  border-left: 3px solid $yellow;
+  color: white; 
+	li{
+	border-bottom: 0px; 
+	margin-bottom: 0px;
+	font-size: 14px; 
+	padding-bottom: 0px;
+	a{
+		color: white;
+		font-size: 14px;
+	}
+}
+}
+}
+
+.site-footer{
+	background-color: $brown; 
+	font-size: 14px;
+	color: white; 
+}
+
+.cc-logos{
+	  max-width: 350px;
+  margin-bottom: 20px;
+}
+
+/************************************ Navigation Styles **********************************************/ 
+
+#menu-top-navigation{
+	  margin: 0 auto;
+  max-width: 1070px;
+  	.current-menu-item, .current-menu-ancestor{
+  		border-top: 3px solid $yellow; 
+  		a{
+  			color: $yellow; 
+  			font-weight: 500; 
+  		}
+  	}
+  	.menu-item {
+  		padding: 30px 0;   	
+  		a{
+  		letter-spacing: 1px; 
+  		text-transform: uppercase; 
+  		padding: 0 15px; 
+  		border-right: 1px solid white; 
+  		&:hover{color:$yellow; }
+  	}
+  }
+  & .menu-item-95{
+  			a{
+  				border-right: 0px; 
+  			}
+  	}
+  	.sub-menu{
+  		padding-top: 30px; 
+  		li{
+  			background-color: $brown; 
+  			padding: 0; 
+  			&:hover{
+  				background-color: #6e5a51; 
+  			}
+  			a{
+  				background-color: transparent; 
+  				border: 0px; 
+  				padding: 20px;  
+  				color: white; 
+  				font-weight: normal; 
+  				text-transform: capitalize; 
+
+  			}
+  		}
+  		.current-menu-item{
+  			a{
+  				color: $yellow; 
+  			}
+  			border: 0px; 
+  		}
+  	}
+}
+
+/************************ Slider Styles **********************************************/
+.slider-text{
+	color: white; 
+	font-size: 14px; 
+	h2{
+		color: white; 
+	}
+	p{
+		padding: 0; 
+		margin-bottom: 15px; 
+		line-height: 1.5em; 
+		text-align: justify;
+	}
+	.button{
+		 font-size: 12px;
+  		font-weight: 500;
+ 		letter-spacing: 0.5px;
+		&:hover{
+		color: white; 
+		background-color: $yellow; 
+}
+
+	}
+
+}
+.top-line{
+	display: block; 
+	height: 1px; 
+	width: 100%; 
+	background-color: white; 
+	margin-bottom: 10px; 
+	position: relative; 
+	&:before{
+		content:""; 
+		height: 3px; 
+		width: 30px; 
+		background-color: $yellow; 
+		position: absolute; 
+		top: -3px; 
+	}
+}
+.brd{
+	position: relative; 
+	&:before{
+		content:""; 
+		height: 3px; 
+		width: 7%; 
+		background-color: $yellow; 
+		position: absolute; 
+		right: 0; 
+		bottom: 0; 
+	}
+}
+/************************************* Media Queries******************************************/
+@media only screen and (min-width: 554px){
+	.ls-l{
+		min-width: 408px; 
+	}
+	.ls-inner, .ls-wp-fullwidth-container, .ls-wp-fullwidth-helper, #layerslider_1, .ls-bg{
+	min-height: 450px; 
+}
+.ls-bg{
+	margin-top: 0 !Important; 
+}
+}
+@media only screen and (max-width: 553px){
+	.ls-l{
+		display: none !Important; 
+	}
+}
+@media only screen and (max-width: 960px){
+	.site-header .wrap{
+		.title-area{
+	padding: 0; 
+	width: 250px; 
+}
+	.widget-area{
+		margin-right: 0px; 
+		width: 420px; 
+	}
+}
+}
+@media only screen and (max-width: 800px){
+	img.banner-image{
+		margin-top: -31px !Important; 
+	}
+.bm-text{
+	display: none; 
+}
+
+	.footer-widgets .wrap .widget-area{
+		width: 33%; 
+		padding-right: 20px; 
+	}
+	.bottom-content{
+		.one-fourth{
+			margin-top: 40px; 
+			&:first-child{
+				margin-top: 0px; 
+			}
+			h3{
+				padding-bottom: 0px; 
+			}
+		}
+		.breaks{
+				margin-top: 40px; 
+			}
+			.a-third{
+				padding-top: 0px; 
+		.one-fourth{
+			display: block; 
+			margin-top: 40px; 
+			width: 100%; 
+		}	
+		}
+	}
+	h2, .internal.bottom-content h1, .internal.bottom-content h3{
+		font-size: 25px; 
+	}
+
+	img.alignnone, .alignnone{
+		margin: 0 auto; 
+		display: block; 
+	}
+
+	.main-content, .below-content {
+		padding: 40px; 
+		
+		img.alignleft{
+		max-width: 250px;
+	}
+		.first{
+			margin-bottom: 40px; 
+		}
+	}
+	.site-header .wrap{
+		.title-area{
+			width: 100%; 
+			.site-title a{
+				background-position: top center; 
+			}
+		}
+		.widget-area{
+			width: 100%; 
+			max-width: 420px;
+  			margin: 0 auto;
+ 			float: none;
+  			padding-top: 50px;
+  			clear: both;
+		}
+	}
+	.main-content.about-us .table{
+			width: 100%; 
+			margin: 0; 
+			padding: 0; 
+			&:first-child img{
+ max-width: 250px;
+ 
+			}
+		 .table-cell{
+		width: 100%; 
+		padding: 0; 
+		float: none; 
+		display: block; 
+		h3{
+			margin-top: 30px; 
+		}
+	}
+}
+.table-cell{
+	display: block; 
+	width: 100%; 
+	&:first-child{
+		width: 100%; 
+	}
+	img{
+		max-width: 300px; 
+		display: block; 
+		margin: 0 auto; 
+		float: none; 
+	}
+	&:first-child{
+		margin-bottom: 40px; 
+	}
+}
+.one-half{
+	border-right: 0px !important; 
+	padding: 0 !important; 
+	margin: 0; 
+}
+.page-title{
+	max-width: 90% !important; 
+}
+.large-text{
+	font-size: 20px !important; 
+	padding: 0px !Important; 
+}
+.internal-banner{
+	padding: 20px 40px !Important; 
+}
+.internal.bottom-content {
+	.one-third {
+		margin-top: 45px; 
+	h2{
+		padding-bottom: 0px; 
+	}
+}
+.one-third.first{
+	margin-top: 0px; 
+}
+}
+#services {
+	p{
+		width: 100%; 
+		margin: 0; 
+	}
+}
+}
+@media only screen and (max-width: 767px){
+	img.banner-image{
+		margin-top: -21px !Important; 
+	}
+	#banner .banner-content{
+		font-size: 25px; 
+		padding: 20px 10px; 
+	}
+	#banner.small .banner-content{
+		font-weight: 500 !Important; 
+		font-size: 16px; 
+	}
+}
+@media only screen and (max-width: 480px){
+		img.banner-image{
+		margin-top: -21px !Important; 
+	}
+	.internal-banner p{
+		float: none !Important; 
+	}
+		.footer-widgets .wrap .widget-area{
+		width: 50%; 
+		padding-left: 30px; 
+	}
+	#banner .banner-content{
+		line-height: 1em; 
+	}
+	.alignleft{
+		float: none; 
+		margin: 0 auto !Important; 
+		margin-bottom: 24px !important; 
+		display: block; 
+	}
+	a.read-more{
+	  display: block;
+  float: none;
+  padding: 5px 0;
+ 
+}
+.home-side .items{
+	text-align: center; 
+	margin-bottom: 20px; 
+}
+.bottom-content{
+	font-size: 20px; 
+}
+.more.button{
+	  margin: 0 auto;
+  float: none;
+  display: block;
+  max-width: 130px;
+   margin-top: 10px; 
+}
+
+	h1{
+		font-size: 25px; 
+		line-height: 1em; 
+	}
+}
+
+@media only screen and (max-width: 479px){
+	.entry-content {
+		.main-content, .internal-banner, .below-content{
+		padding: 20px !important; 
+	}
+}
+
+	h2, .internal.bottom-content h1, .internal.bottom-content h3{
+		font-size: 20px; 
+	}
+	.bottom-content, p, a, .large-text{
+		font-size: 15px; 
+	}
+	.contact-info {
+		width: 231px !Important; 
+		margin: 0 auto; 
+		float: none; 
+		padding-left: 0px !Important; 
+		padding-right: 0px !Important; 
+		&:first-child{
+			border-right: 0px; 
+			
+	}
+}
+.header-image .title-area{
+	max-width: 250px; 
+	float: none; 
+	margin: 0 auto; 
+}
+.site-header .wrap .widget-area{
+	padding-top: 0px; 
+}
+.footer-widgets .wrap .widget-area{
+		
+		.widget{
+			margin-bottom: 0px; 
+		}
+		width: 50%; 
+		ul{
+			display: block; 
+			li span{
+				display: none; 
+			}
+
+		}
+	
+	}
+}
+
+@media only screen and (max-width: 841px){
+	.item{
+		width: 46%; 
+	}
+
+}
+
+
+@media only screen and (max-width: 571px){
+	.item{
+		width: 100%; 
+	}
+
+}
+@media only screen and (max-width: 623px){
+	.bottom-content .item{
+		width: 48%; 
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 407px){
+	.bottom-content .item{
+		width: 99%; 
+	}
+}
+@media only screen and (max-width: 1010px){
+	.footer-widgets .widget-area{
+		width: 20%; 
+		padding-right: 20px; 
+	}
+}
+@media only screen and (max-width: 320px){
+		img.banner-image{
+		margin-top: -21px !Important; 
+	}
+}
+
+/* Responsive Navigation
+---------------------------------------------------------------------------------------------------- */
+
+/* Standard Navigation
+--------------------------------------------- */
+
+nav {
+	clear: both;
+}
+
+/* Navigation toggles
+--------------------------------------------- */
+
+.sub-menu-toggle,
+.menu-toggle {
+	display: none;
+	visibility: hidden;
+}
+
+/* Navigation toggles - Ensure Menu Displays when Scaled Up
+--------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+	nav {
+		display: block !important;
+	}
+}
+
+/* Navigation toggles - Mobile (Change max width as you see fit)
+--------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+	#menu-top-navigation .menu-item{
+		background-color: $brown; 
+			border: 0px !important; 
+			padding: 20px 0; 
+			a{
+				border: 0px; 
+			}
+		
+	}
+	#menu-top-navigation .sub-menu li a{
+		background-color: #776359;
+		border-bottom: 1px solid $brown; 
+	}
+	.nav-primary .wrap{
+		background-color: transparent; 
+	}
+	button.menu-toggle{
+		width: 100%; 
+	}
+	.menu-toggle,
+	.sub-menu-toggle {
+		display: block;
+		font-size: 20px;
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 10px; 
+		text-align: center;
+		visibility: visible;
+	}
+
+	button.menu-toggle,
+	button.sub-menu-toggle {
+		background-color: $brown;
+		color: white;
+		font-weight: normal; 
+	}
+
+	.sub-menu-toggle {
+  border-radius: 6px / 6px;
+  	 box-shadow: rgba(53, 43, 39, 0.4) 0 0 25px, rgba(26, 24, 23, 0.2) 0 0 3px 1px inset;
+		padding: 15px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: 20px; 
+	}
+
+	.menu-toggle:before {
+		content: "\2261";
+	}
+
+	.menu-toggle.activated:before {
+		content: "\2191";
+	}
+
+	.sub-menu-toggle:before {
+		content: "+";
+	}
+
+	.sub-menu-toggle.activated:before {
+		content: "-";
+	}
+
+	nav {
+		display: none;
+		position: relative;
+	}
+
+	.genesis-nav-menu .menu-item {
+		background-color: #f5f5f5;
+		display: block;
+		position: relative;
+		text-align: left;
+	}
+
+	.genesis-nav-menu .menu-item:hover {
+		position: relative;
+	}
+
+	.genesis-nav-menu .sub-menu {
+		clear: both;
+		display: none;
+		opacity: 1;
+		position: static;
+		width: 100%;
+	}
+
+	.genesis-nav-menu .sub-menu a {
+		border-left: 0;
+		position: relative;
+		width: auto;
+	}
+
+	.genesis-nav-menu .sub-menu .sub-menu {
+		margin: 0;
+	}
+
+	.genesis-nav-menu .sub-menu .sub-menu a {
+		background-color: #f5f5f5;
+		padding-left: 30px;
+	}
+
+	.genesis-nav-menu .sub-menu .sub-menu .sub-menu a {
+		background-color: #fff;
+		padding-left: 40px;
+	}
+
+	.nav-primary a:hover,
+	.nav-primary .current-menu-item > a {
+		color: #333;
+	}
+
+}
+
