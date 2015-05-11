@@ -1,0 +1,2 @@
+# wordpress
+Testing wordpress deployment.
